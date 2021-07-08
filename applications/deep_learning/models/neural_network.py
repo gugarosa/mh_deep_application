@@ -8,7 +8,8 @@ class NeuralNetwork(Model):
 
     """
 
-    def __init__(self, n_input=784, n_hidden=392, n_output=10, lr=0.001, init_weights=None, device='cpu'):
+    def __init__(self, n_input=784, n_hidden=392, n_output=10, lr=0.001,
+                 init_weights=None, device='cpu'):
         """Initialization method.
 
         Args:
@@ -56,6 +57,6 @@ class NeuralNetwork(Model):
         # Fully-connected block
         x = F.relu(self.fc1(x))
         x = self.drop(x)
-        x = self.fc2(x)
+        preds = self.fc2(x)
 
-        return x
+        return preds

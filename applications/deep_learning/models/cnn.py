@@ -8,7 +8,8 @@ class ResNet(Model):
 
     """
 
-    def __init__(self, n_channels=3, n_output=10, lr=0.001, init_weights=None, device='cpu'):
+    def __init__(self, n_channels=3, n_output=10, lr=0.001,
+                 init_weights=None, device='cpu'):
         """Initialization method.
 
         Args:
@@ -49,6 +50,6 @@ class ResNet(Model):
         """
 
         # Passes down the model
-        x = self.model(x)
+        preds = self.model(x)
         
-        return x
+        return preds
