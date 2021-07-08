@@ -1,8 +1,7 @@
 import torch
 import torchvision
-from torch.utils.data import DataLoader
-
 from models import NeuralNetwork
+from torch.utils.data import DataLoader
 
 # Input transform
 transform = torchvision.transforms.Compose([
@@ -19,7 +18,7 @@ test_loader = DataLoader(test, batch_size=128, shuffle=False, num_workers=0)
 
 # Instantiates the model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-model = NeuralNetwork(n_input=784, n_hidden=384, n_output=10, lr=0.001, device=device)
+model = NeuralNetwork(n_input=784, n_hidden=392, n_output=10, lr=0.001, device=device)
 
 # Fits the model
 model.fit(train_loader, test_loader, epochs=10)

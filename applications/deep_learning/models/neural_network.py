@@ -1,7 +1,5 @@
-import torch
 import torch.nn as nn
 import torch.nn.functional as F
-
 from models import Model
 
 
@@ -10,7 +8,7 @@ class NeuralNetwork(Model):
 
     """
 
-    def __init__(self, n_input=784, n_hidden=384, n_output=10, lr=0.001, init_weights=None, device='cpu'):
+    def __init__(self, n_input=784, n_hidden=392, n_output=10, lr=0.001, init_weights=None, device='cpu'):
         """Initialization method.
 
         Args:
