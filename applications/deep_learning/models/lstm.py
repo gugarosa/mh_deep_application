@@ -31,7 +31,7 @@ class LSTM(Model):
 
         # Recurrent layer
         # (n_embedding, n_hidden)
-        self.rnn = nn.LSTM(n_embedding, n_hidden, batch_first=True)
+        self.rnn = nn.LSTM(n_embedding, n_hidden)
 
         # Linear layer
         # (n_input, n_output)
@@ -51,11 +51,9 @@ class LSTM(Model):
 
         """
 
-        print(x)
-
         # Passes down through the network
         x = self.emb(x)
         _, (h, _) = self.rnn(x)
         preds = self.fc(h[-1])
-        
+
         return preds
