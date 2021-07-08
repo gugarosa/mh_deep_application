@@ -30,12 +30,12 @@ class NeuralNetwork(Model):
         self.n_input = n_input
 
 	    # Fully-connected layers
-        # n_input, n_output
+        # (n_input, n_output)
         self.fc1 = nn.Linear(n_input, n_hidden)
         self.fc2 = nn.Linear(n_hidden, n_output)
 
         # Dropout layer
-        # probability
+        # (probability)
         self.drop = nn.Dropout(0.25)
 
         # Compiles the network
