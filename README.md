@@ -36,11 +36,15 @@ The lecture is written in Portuguese in a slide-based format. The contents are a
 
 ...
 
-### Deep Learning (CNNs and RNNs)
+### Deep Learning (NNs, CNNs and RNNs)
 
 ...
 
 ### Finding Suitable Hyperparameters
+
+...
+
+### Feature Selection
 
 ...
 
