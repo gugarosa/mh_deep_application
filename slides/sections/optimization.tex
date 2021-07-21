@@ -4,10 +4,24 @@
 \begin{frame}{Otimização}
 	\begin{itemize}
 		\justifying
-		\item O estudo da otimização~\cite{bertsekas99} possibilita um maior \textbf{conhecimento} sobre o problema;
+		\item A palavra matemática, do latim \emph{mathematica}, refere-se ao \textbf{conhecimento} e é considerada uma base formal para a resolução de problemas;
 		\\~\\
-		\item \textbf{Otimizar} é encontrar um \textbf{conjunto de variáveis} adequadas para a resolução de um problema.
+		\item Alguns \textbf{problemas não são triviais} e necessitam de um conjunto adicional de ferramentas, conhecidas por otimização ou programação matemática.
 		\end{itemize}
+\end{frame}
+
+\begin{frame}
+	\textbf{Otimização} consiste em minimizar (maximizar) uma função matemática:
+	\begin{equation}
+		\label{e.min_opt}
+		\min_{\forall \mathbf{x} \in {\Re^n}} f(\mathbf{x}),
+	\end{equation}
+	onde $f(\mathbf{x})$ é a função objetivo, dado que $\mathbf{x} \in \Re^n$. A otimização desta função objetivo visa encontrar o conjunto mais adequado de valores para $\mathbf{x}$, denominado por $\mathbf{x}^*$, onde $f(\mathbf{x}^*) \leq f(\mathbf{x})$.
+	\\~\\
+	\begin{block}{}
+		\centering
+			$\min(f) = \max(-f)$
+	\end{block}	
 \end{frame}
 
 \begin{frame}
@@ -20,15 +34,6 @@
 \end{frame}
 
 \begin{frame}
-	\begin{itemize}
-		\justifying
-		\item \textbf{Algoritmos} de Aprendizado de Máquina são usualmente \textbf{treinados} através de um processo de \textbf{otimização}~\cite{Lan:20};
-		\\~\\
-		\item Otimização permite o \textbf{ajuste de parâmetros} (variáveis) de acordo com o problema (\textbf{função de perda});
-	\end{itemize}
-\end{frame}
-
-\begin{frame}
 	\begin{figure}
 		\centering
 		\includegraphics[scale=0.45]{figs/opt_function_opt.eps}	
@@ -36,6 +41,18 @@
 		\label{f.opt_function_opt}
 	\end{figure}
 \end{frame}
+
+\begin{frame}
+	\begin{itemize}
+		\justifying
+		\item Tradicionalmente, \textbf{métodos iterativos de otimização} são utilizados para a resolução de problemas de otimização;
+		\\~\\
+		\item Método de Newton, método Quasi-Newton, gradiente descendente, métodos de interpolação, dentre outros~\cite{Bertsekas:99};
+		\\~\\
+		\item Utilizam a \textbf{avaliação} de \textbf{gradientes}, Hessianos ou o próprio valor da função objetivo para encontrar as soluções ótimas.
+	\end{itemize}
+\end{frame}
+
 
 \subsection{Otimização Meta-Heurística}
 \label{ss.optimization_mh}
