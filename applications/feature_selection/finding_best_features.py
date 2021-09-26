@@ -20,8 +20,9 @@ def feature_selection(x):
     X = digits.data
     Y = digits.target
 
-    # Splits data into training and validation sets
-    X_train, X_val, Y_train, Y_val = train_test_split(X, Y, train_size=0.5, random_state=0)
+    # Splits data into training, validation and unused testing sets
+    X_train, _, Y_train, _ = train_test_split(X, Y, train_size=0.9, random_state=0)
+    X_train, X_val, Y_train, Y_val = train_test_split(X_train, Y_train, train_size=0.5, random_state=0)
 
     # Remakes training and validation subgraphs with selected features
     X_train_selected = X_train[:, features]

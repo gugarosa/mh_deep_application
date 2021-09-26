@@ -1,5 +1,5 @@
 import torch.nn as nn
-from models import Model
+from models.model import Model
 
 
 class LSTM(Model):

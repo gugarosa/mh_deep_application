@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torch.nn.functional as F
-from models import Model
+from models.model import Model
 
 
 class NeuralNetwork(Model):

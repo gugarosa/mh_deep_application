@@ -1,6 +1,6 @@
 import torch.nn as nn
 import torchvision as tv
-from models import Model
+from models.model import Model
 
 
 class ResNet(Model):

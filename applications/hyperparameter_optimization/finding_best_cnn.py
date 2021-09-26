@@ -26,7 +26,7 @@ def neural_network(x):
 
     # Loads training and validation sets
     train = torchvision.datasets.CIFAR10(root='./data', train=True, download=True, transform=transform)
-    val = torchvision.datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
+    train, val = torch.utils.data.random_split(train, [40000, 10000])
 
     # Creates training and validation loaders
     train_loader = DataLoader(train, batch_size=100, shuffle=True, num_workers=0)
