@@ -1,5 +1,4 @@
 import numpy as np
-import opytimizer.math.random as r
 from opytimizer import Opytimizer
 from opytimizer.core import Function
 from opytimizer.optimizers.boolean import BPSO
@@ -46,7 +45,7 @@ def feature_selection(x):
 np.random.seed(0)
 
 # Number of agents and decision variables
-n_agents = 5
+n_agents = 3
 n_variables = 64
 
 # Creates the space, optimizer and function
@@ -55,7 +54,10 @@ optimizer = BPSO()
 function = Function(feature_selection)
 
 # Bundles every piece into Opytimizer class
-opt = Opytimizer(space, optimizer, function)
+opt = Opytimizer(space, optimizer, function, save_agents=True)
 
 # Runs the optimization task
-opt.start(n_iterations=10)
+opt.start(n_iterations=100)
+
+# Saves the optimization task
+opt.save('finding_best_features.pkl')

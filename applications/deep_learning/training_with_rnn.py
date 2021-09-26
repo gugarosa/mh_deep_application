@@ -3,6 +3,7 @@ import torchtext
 from models import LSTM
 from torch.utils.data import DataLoader
 
+
 def yield_tokens(iterator):
     # Iterates through iterator
     for _, text in iterator:

@@ -1,4 +1,5 @@
 import sys
+
 sys.path.append('applications/deep_learning')
 
 import numpy as np
