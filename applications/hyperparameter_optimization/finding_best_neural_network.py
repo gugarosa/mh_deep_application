@@ -58,7 +58,10 @@ optimizer = PSO()
 function = Function(neural_network)
 
 # Bundles every piece into Opytimizer class
-opt = Opytimizer(space, optimizer, function, save_agents=False)
+opt = Opytimizer(space, optimizer, function, save_agents=True)
 
 # Runs the optimization task
-opt.start(n_iterations=10)
+opt.start(n_iterations=25)
+
+# Saves the optimization task
+opt.save('finding_best_neural_network.pkl')

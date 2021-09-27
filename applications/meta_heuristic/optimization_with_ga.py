@@ -27,5 +27,5 @@ opt = Opytimizer(space, optimizer, function, save_agents=False)
 # Runs the optimization task
 opt.start(n_iterations=250)
 
-# Saves the optimization model
+# Saves the optimization task
 opt.save('standard_opt_ga.pkl')
