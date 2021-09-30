@@ -66,4 +66,4 @@ opt = Opytimizer(space, optimizer, function, save_agents=True)
 opt.start(n_iterations=10)
 
 # Saves the optimization task
-opt.save('finding_best_neural_network.pkl')
+opt.save('finding_best_cnn.pkl')
