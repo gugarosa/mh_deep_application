@@ -16,7 +16,7 @@ history = opt.history
 # Gathers desired variables
 _, agent_0_fit = history.get_convergence('agents', 0)
 _, agent_1_fit = history.get_convergence('agents', 1)
-_, agent_2_fit = history.get_convergence('agents', 1)
+_, agent_2_fit = history.get_convergence('agents', 2)
 best_pos, best_fit = history.get_convergence('best_agent')
 
 # Plots convergence graph

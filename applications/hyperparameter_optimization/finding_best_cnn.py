@@ -13,7 +13,7 @@ from opytimizer.spaces import SearchSpace
 from torch.utils.data import DataLoader
 
 
-def neural_network(x):
+def cnn(x):
     # Gathers current optimization parameters
     kernel_size = int(x[0][0])
     stride = int(x[1][0])
@@ -57,7 +57,7 @@ upper_bound = [7, 5, 3]
 # Creates the space, optimizer and function
 space = SearchSpace(n_agents, n_variables, lower_bound, upper_bound)
 optimizer = GA()
-function = Function(neural_network)
+function = Function(cnn)
 
 # Bundles every piece into Opytimizer class
 opt = Opytimizer(space, optimizer, function, save_agents=True)
