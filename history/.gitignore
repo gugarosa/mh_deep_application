@@ -1,0 +1,2 @@
+# De-ignore history files
+!*.pkl

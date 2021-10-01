@@ -10,8 +10,8 @@ def neural_network(x):
     pass
 
 # Loads the optimization history
-opt = Opytimizer.load('finding_best_cnn.pkl')
-# opt = Opytimizer.load('finding_best_neural_network.pkl')
+opt = Opytimizer.load('history/finding_best_cnn.pkl')
+# opt = Opytimizer.load('history/finding_best_neural_network.pkl')
 history = opt.history
 
 # Gathers desired variables
@@ -25,4 +25,3 @@ print(best_pos[:, -1])
 c.plot(agent_0_fit, agent_1_fit, agent_2_fit, best_fit,
        labels=['$x_0$', '$x_1$', '$x_2$', '$x^*$'],
        title='Agents and best agent fitness convergence')
-

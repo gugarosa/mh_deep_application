@@ -2,9 +2,9 @@ import opytimizer.visualization.convergence as c
 from opytimizer import Opytimizer
 
 # Loads optimization models (BH, GA and PSO)
-bh = Opytimizer.load('meta_heuristic_bh.pkl')
-ga = Opytimizer.load('meta_heuristic_ga.pkl')
-pso = Opytimizer.load('meta_heuristic_pso.pkl')
+bh = Opytimizer.load('history/meta_heuristic_bh.pkl')
+ga = Opytimizer.load('history/meta_heuristic_ga.pkl')
+pso = Opytimizer.load('history/meta_heuristic_pso.pkl')
 
 # Gathers best agents' positions and fitnesses (BH, GA and PSO)
 bh_best_agent_pos, bh_best_agent_fit = bh.history.get_convergence('best_agent')

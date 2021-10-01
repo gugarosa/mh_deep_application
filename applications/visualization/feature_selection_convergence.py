@@ -10,7 +10,7 @@ def feature_selection(x):
     pass
 
 # Loads the optimization history
-opt = Opytimizer.load('finding_best_features.pkl')
+opt = Opytimizer.load('history/finding_best_features.pkl')
 history = opt.history
 
 # Gathers desired variables
