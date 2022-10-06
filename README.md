@@ -52,6 +52,6 @@ Finally, another exciting application of meta-heuristic optimization is to selec
 
 ## Support
 
-It is inevitable to make mistakes or create some bugs. If there is any problem or concern, we will be available at this repository or gustavo.rosa@unesp.br.
+It is inevitable to make mistakes or create some bugs. If there is any problem or concern, we will be available at this repository.
 
 ---
